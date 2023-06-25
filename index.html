@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title杭州文化</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style>
+			@import url("css/index.css" );
+		</style>
+
+	</head>
+	<body>
+		<img class="Biaos" src="img/biao.png">
+		<img class="Build" src="img/duildd.png">
+		<img class="Title" src="img/zhuti.png">
+		<img class="Yniao" src="img/Yniao.png" onclick="Showstr()">
+		<p id="content"></p>
+		<div id="Str" style="display: none;">
+			太阳神鸟图案是中华先民崇拜
+					    
+			太阳艺术表现形式的杰出代表之作，
+					     
+			以此作为中国文化遗产的标志体现了
+					     
+			中华民族传统文化强烈的凝聚力和向心力，
+					     
+			表现了中华民族自强不息、昂扬向上的精神风貌。
+			
+		</div>
+		<script language="javascript">
+			function Showstr(){
+				var index=0;
+				var str=document.getElementById("Str").innerHTML;
+				function type(){
+					if(index==str,length){
+						index=0;
+					}
+					document.getElementById("content").innerText=str.substring(0,index++);
+				}
+				setInterval(type,150);
+			}
+		</script>
+	</body>
+</html>

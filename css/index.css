@@ -1,0 +1,59 @@
+body{
+	width:1920px;
+    height:1080px;
+    display: flex;
+    overflow: hidden;
+	background-color:#ddd8ab;
+	justify-content: center;
+}
+.Title{
+	width:20%;
+	height:95%;
+	position:absolute;
+	left:5%;
+	top:2%;
+}
+.Yniao{
+	width:23%;
+	height:42%;
+	position:absolute;
+	right:5%;
+	top:3%;
+	cursor: pointer;
+	box-shadow: 0 0 25px #fff inset,0 0 25px #fff;
+	border-radius: 55%;
+	animation:bei 5s linear 1 ;
+}
+@keyframes bei{
+            	0%{opacity:0}
+		      	50%{opacity:0.2;}
+		      	75%{opacity:0.3}
+		      	100%{opacity:1;}
+            }
+.Yniao:hover
+{
+transform: scale(1.2);
+}
+.Biaos{
+	width:11%;
+	height:20%;
+	position:absolute;
+	left:13%;
+	bottom:15%;
+}
+.Build{
+	width:20%;
+	height:30%;
+	position:absolute;
+	right:6%;
+	bottom:10%;
+}
+#content{
+	position:absolute;
+	top:10%;
+	right:35%;
+	border:5px solid rgba(0,0,0,.5);
+	background: lightblue;/*背景颜色*/
+	background-clip: padding-box;
+	box-shadow: 0 0 15px #ADD8E6;
+}
